@@ -25,6 +25,38 @@
 \hypersetup{pdfborder={0 0 0} } % This turns off the stupid colourful border around links
 
 
+% From pandoc:
+% https://github.com/jgm/pandoc-templates/blob/master/default.latex
+$if(pagestyle)$
+\pagestyle{$pagestyle$}
+$endif$
+$if(csl-refs)$
+\newlength{\cslhangindent}
+\setlength{\cslhangindent}{1.5em}
+\newlength{\csllabelwidth}
+\setlength{\csllabelwidth}{3em}
+\newlength{\cslentryspacingunit} % times entry-spacing
+\setlength{\cslentryspacingunit}{\parskip}
+\newenvironment{CSLReferences}[2] % #1 hanging-ident, #2 entry spacing
+ {% don't indent paragraphs
+  \setlength{\parindent}{0pt}
+  % turn on hanging indent if param 1 is 1
+  \ifodd #1
+  \let\oldpar\par
+  \def\par{\hangindent=\cslhangindent\oldpar}
+  \fi
+  % set entry spacing
+  \setlength{\parskip}{#2\cslentryspacingunit}
+ }%
+ {}
+\usepackage{calc}
+\newcommand{\CSLBlock}[1]{#1\hfill\break}
+\newcommand{\CSLLeftMargin}[1]{\parbox[t]{\csllabelwidth}{#1}}
+\newcommand{\CSLRightInline}[1]{\parbox[t]{\linewidth - \csllabelwidth}{#1}\break}
+\newcommand{\CSLIndent}[1]{\hspace{\cslhangindent}#1}
+$endif$
+
+
 
 % **************  TITLE AND AUTHOR INFORMATION **************
 
@@ -47,13 +79,16 @@
 \begin{abstract}
 \centering
 
-Summary of no more than 100 words \textit{(this needs to be pasted into the `Abstract’ box on EasyChair)}.
+Summary of no more than 100 words \textit{(this needs to be pasted into the `Abstract? box on EasyChair)}.
 
-$ $ \\ {\bf KEYWORDS:} 5 keywords or short phrases relevant to the work \textit{(these need to be pasted into the `Keywords’ box on EasyChair)}.
+
+{\bf KEYWORDS:} 5 keywords or short phrases relevant to the work \textit{(these need to be pasted into the `Keywords? box on EasyChair)}.
 
 \end{abstract}
 
 % **************  MAIN BODY OF THE PAPER **************
+
+$body$
 
 \section{Introduction to guidelines}
 
@@ -67,26 +102,26 @@ Sub-sections should also be numbered as shown here. The sub-section heading shou
 
 \section{Figures, Tables and Equations,}
 
-Tables should be as shown below (or as close as possible) and should be referenced as Table~\ref{first_table} in the text.
-
-\begin{table}[htdp]
-\caption{GISRUK Conferences}
-\begin{center}
-\begin{tabular}{c|c}
-\hline 
-Year	 & City \\
-\hline 
-2007 & Maynooth \\
-2008 & Manchester \\
-2009 & Durham \\
-2010 & UCL \\
-2011 & Portsmouth \\
-2012 & Lancaster\\ 
-\hline
-\end{tabular}
-\end{center}
-\label{first_table}
-\end{table}%
+% Tables should be as shown below (or as close as possible) and should be referenced as Table~\ref{first_table} in the text.
+% 
+% \begin{table}[htdp]
+% \caption{GISRUK Conferences}
+% \begin{center}
+% \begin{tabular}{c|c}
+% \hline 
+% Year	 & City \\
+% \hline 
+% 2007 & Maynooth \\
+% 2008 & Manchester \\
+% 2009 & Durham \\
+% 2010 & UCL \\
+% 2011 & Portsmouth \\
+% 2012 & Lancaster\\ 
+% \hline
+% \end{tabular}
+% \end{center}
+% \label{first_table}
+% \end{table}%
 
 Equations should be centred on the page and numbered consecutively in the right-hand margin, as below. They should be referred to in the text as Equation~\ref{first_equation}. 
 
@@ -121,7 +156,7 @@ All contributing authors should include a biography of no more than 50 words eac
 
 % **************  REFERENCES **************
 
-\bibliographystyle{apa}
-\bibliography{references.bib}
+% \bibliographystyle{apa}
+% \bibliography{references.bib}
 
 \end{document}
