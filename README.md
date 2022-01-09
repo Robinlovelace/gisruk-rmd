@@ -31,7 +31,7 @@ file.edit("example-paper.Rmd")
 ```
 
 2.  Edit the minimal abstract and authors section in the updated
-    `GISRUKPaperTemplate2015.tex` file, e.g. with:
+    `GISRUKPaperTemplate.tex` file, e.g. with:
 
 ``` r
 file.edit("GISRUKPaperTemplate.tex")

@@ -27,7 +27,7 @@ Reproduce that file and create your own reproducible geographic data analysis pa
 ```r
 file.edit("example-paper.Rmd")
 ```
-2. Edit the minimal abstract and authors section in the updated `GISRUKPaperTemplate2015.tex` file, e.g. with:
+2. Edit the minimal abstract and authors section in the updated `GISRUKPaperTemplate.tex` file, e.g. with:
 ```r
 file.edit("GISRUKPaperTemplate.tex")
 ```
