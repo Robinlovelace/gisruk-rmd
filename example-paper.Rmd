@@ -1,7 +1,7 @@
 ---
 output:
   pdf_document:
-    template: GISRUKPaperTemplate2015.tex
+    template: GISRUKPaperTemplate.tex
 bibliography: references.bib
 # csl: acm-sig-proceedings.csl
 ---
@@ -15,7 +15,7 @@ Introduction to guidelines
 ==========================
 
 The purpose of providing these notes is to standardise the format of the
-short papers submitted to GISRUK 2015. These notes are based on author
+short papers submitted to GISRUK 2022. These notes are based on author
 guidelines previously produced for the GISRUK conference series which in
 turn were based on other guidelines.
 

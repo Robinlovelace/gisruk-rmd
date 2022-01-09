@@ -7,12 +7,24 @@
 <!-- badges: end -->
 
 The goal of gisruk-rmd is to provide a template for GISRUK paper
-submissions.
+submissions that enables reproducible manuscripts to be submitted with
+embedded R, Python or other code, based on the [RMarkdown superset of
+LaTeX](https://rmarkdown.rstudio.com/). At some point it may also work
+with ‘.qmd’ [Quarto](https://quarto.org/) documents, which allows
+[conversion](https://quarto.org/docs/tools/jupyter-lab.html#converting-notebooks)
+to and from IPython notebooks.
 
-To use it:
+It will create nicely formatted pdf documents, like this:
+<https://github.com/Robinlovelace/gisruk-rmd/releases/download/0.22/example-paper.pdf>
 
-1.  Edit the example-paper.Rmd document, e.g. by downloading this repo,
-    opening the RStudio project and entering the following:
+Reproduce that file and create your own reproducible geographic data
+analysis paper as follows:
+
+1.  Edit the example-paper.Rmd document, e.g. by [downloading this repo
+    as a .zip
+    file](https://github.com/Robinlovelace/gisruk-rmd/archive/refs/heads/main.zip),
+    unzipping it, opening the RStudio project and entering the
+    following:
 
 ``` r
 file.edit("example-paper.Rmd")
@@ -22,7 +34,7 @@ file.edit("example-paper.Rmd")
     `GISRUKPaperTemplate2015.tex` file, e.g. with:
 
 ``` r
-file.edit("GISRUKPaperTemplate2015.tex")
+file.edit("GISRUKPaperTemplate.tex")
 ```
 
 When you’d like to see if it works, run the following command:
@@ -34,7 +46,7 @@ rmarkdown::render("example-paper.Rmd")
 You can also press Ctrl+Shift+K in RStudio, which should result in see
 something looking like this:
 
-![](https://user-images.githubusercontent.com/1825120/148705156-a45645a9-00bc-41ff-874e-d018373c8a38.png)
+![](https://user-images.githubusercontent.com/1825120/148705536-d52866d7-f121-4da2-a0b2-f0904d8afddf.png)
 
 To produce this document the original LaTeX template was downloaded as
 follows:
