@@ -1,0 +1,94 @@
+---
+output:
+  pdf_document:
+    template: GISRUKPaperTemplate2015.tex
+bibliography: references.bib
+# csl: acm-sig-proceedings.csl
+---
+
+```{r, eval=FALSE, echo=FALSE}
+rbbt::bbt_update_bib(path_rmd = "example-paper.Rmd", path_bib = "references.bib")
+```
+
+<!-- % **************  MAIN BODY OF THE PAPER ************** -->
+Introduction to guidelines
+==========================
+
+The purpose of providing these notes is to standardise the format of the
+short papers submitted to GISRUK 2015. These notes are based on author
+guidelines previously produced for the GISRUK conference series which in
+turn were based on other guidelines.
+
+The pages should have margins of 2.5 cm all round. The base font should
+be Times New Roman 11pt, or closest equivalent and text should be single
+spaced. Each section of the paper should be numbered. Section headings
+should be left-justified and given in bold type. A slightly larger font
+should be used for the title of the paper and the authors (16pt and 14pt
+respectively). The first line of each paragraph in each section should
+**NOT** be indented.
+
+Sub-sections
+------------
+
+Sub-sections should also be numbered as shown here. The sub-section
+heading should be left-justified and given in bold type (11pt).
+
+Figures, Tables and Equations,
+==============================
+
+Equations should be centred on the page and numbered consecutively in
+the right-hand margin, as below. They should be referred to in the text
+as Equation [\[first_equation\]](#first_equation){reference-type="ref"
+reference="first_equation"}.
+
+$$E=mc^2
+\label{first_equation}$$
+
+Figures should be presented as an integral part of the paper and should
+be referred to as
+Figure [\[first_figure\]](#first_figure){reference-type="ref"
+reference="first_figure"} in the text.
+
+
+<!-- Original LaTeX: -->
+<!-- \begin{figure}[htbp] \begin{center}  -->
+<!-- \resizebox{0.3\textwidth}{!}{  -->
+<!-- 	\includegraphics{lancaster.png} -->
+<!-- } \caption{Location of Lancaster University} \label{first_figure} \end{center} \end{figure} % -->
+
+```{r lancaster, fig.cap="Location of Lancaster University", out.width="30%"}
+knitr::include_graphics("lancaster.png")
+```
+
+
+
+References and Citations
+========================
+
+A list of references cited should be provided at the end of the paper
+using the Harvard format as shown below. Citations of these within the
+text should be given as follows: papers such as [@openshaw_view_1991] or
+a paper by @rey_show_2009.
+
+Books can also be cited [@graser_learning_2014].
+
+File format
+===========
+
+Papers should be submitted in unrestricted **pdf** format. Authors are
+requested to keep to the word limit of 1500 words.
+
+Acknowledgements
+================
+
+Acknowledgement should be made of any funding bodies who have supported
+the work reported in the paper, of those who have given permission for
+their work to be reproduced or of individuals whose particular
+assistance is due recognition. Acknowledge data providers here where
+appropriate.
+
+Biography
+=========
+
+All contributing authors should include a biography of no more than 50
+words each outlining their career stage and research interests.
