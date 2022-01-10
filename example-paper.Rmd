@@ -3,7 +3,6 @@ output:
   pdf_document:
     template: GISRUKPaperTemplate.tex
 bibliography: references.bib
-# csl: acm-sig-proceedings.csl
 ---
 
 ```{r, eval=FALSE, echo=FALSE}
