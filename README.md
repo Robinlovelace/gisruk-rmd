@@ -41,6 +41,10 @@ file.edit("GISRUKPaperTemplate.tex")
 
 When you’d like to see if it works, run the following command:
 
+``` r
+rmarkdown::render("example-paper.Rmd")
+```
+
 You can also press Ctrl+Shift+K in RStudio, which should result in see
 something looking like this:
 
@@ -114,7 +118,7 @@ in the text.
 <!--    \includegraphics{lancaster.png} -->
 <!-- } \caption{Location of Lancaster University} \label{first_figure} \end{center} \end{figure} % -->
 
-<img src="lancaster.png" title="Location of Lancaster University" alt="Location of Lancaster University" width="30%" />
+<img src="lancaster.png" title="Location of Lancaster University" alt="Location of Lancaster University" width="30%" style="display: block; margin: auto;" />
 
 # 4 References and Citations
 

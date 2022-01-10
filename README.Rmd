@@ -39,7 +39,7 @@ file.edit("GISRUKPaperTemplate.tex")
 
 When you'd like to see if it works, run the following command:
 
-```{r, eval=FALSE, echo=FALSE}
+```{r, eval=FALSE, echo=TRUE}
 rmarkdown::render("example-paper.Rmd")
 ```
 
@@ -128,11 +128,9 @@ reference="first_figure"} in the text.
 <!-- 	\includegraphics{lancaster.png} -->
 <!-- } \caption{Location of Lancaster University} \label{first_figure} \end{center} \end{figure} % -->
 
-```{r lancaster, fig.cap="Location of Lancaster University", out.width="30%"}
+```{r lancaster, fig.cap="Location of Lancaster University", out.width="30%", fig.align='center'}
 knitr::include_graphics("lancaster.png")
 ```
-
-
 
 References and Citations
 ========================
