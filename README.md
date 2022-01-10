@@ -1,7 +1,7 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-# gisruk-rmd
+# 1 gisruk-rmd
 
 <!-- badges: start -->
 <!-- badges: end -->
@@ -16,6 +16,8 @@ to and from IPython notebooks.
 
 It will create nicely formatted pdf documents, like this:
 <https://github.com/Robinlovelace/gisruk-rmd/releases/download/0.22/example-paper.pdf>
+and this [README as a PDF in GISRUK’s
+style](https://github.com/Robinlovelace/gisruk-rmd/releases/download/0.22/README.pdf).
 
 Reproduce that file and create your own reproducible geographic data
 analysis paper as follows:
@@ -55,7 +57,8 @@ unzip GISRUK*
 See commits to see how it was modified to work as a .Rmd template.
 
 To show it can output in any format the below is a modified example from
-the original.
+the original. See Python code below, which results in Figure
+<a href="#fig:plot1">1.1</a>.
 
 ``` python
 import matplotlib.pyplot as plt
@@ -69,9 +72,9 @@ df['gdp_pp'] = df['gdp_md_est'] / df['pop_est']
 df.plot()
 ```
 
-![Made with Python](README_files/figure-gfm/unnamed-chunk-5-1.png)
+![Figure 1.1: Made with Python](README_files/figure-gfm/plot1-1.png)
 
-# Introduction to guidelines
+# 2 Introduction to guidelines
 
 The purpose of providing these notes is to standardise the format of the
 short papers submitted to GISRUK 2022. These notes are based on author
@@ -86,12 +89,12 @@ should be used for the title of the paper and the authors (16pt and 14pt
 respectively). The first line of each paragraph in each section should
 **NOT** be indented.
 
-## Sub-sections
+## 2.1 Sub-sections
 
 Sub-sections should also be numbered as shown here. The sub-section
 heading should be left-justified and given in bold type (11pt).
 
-# Figures, Tables and Equations,
+# 3 Figures, Tables and Equations,
 
 Equations should be centred on the page and numbered consecutively in
 the right-hand margin, as below. They should be referred to in the text
@@ -113,7 +116,7 @@ in the text.
 
 <img src="lancaster.png" title="Location of Lancaster University" alt="Location of Lancaster University" width="30%" />
 
-# References and Citations
+# 4 References and Citations
 
 A list of references cited should be provided at the end of the paper
 using the Harvard format as shown below. Citations of these within the
@@ -122,12 +125,12 @@ paper by Rey (2009).
 
 Books can also be cited (Graser 2014).
 
-# File format
+# 5 File format
 
 Papers should be submitted in unrestricted **pdf** format. Authors are
 requested to keep to the word limit of 1500 words.
 
-# Acknowledgements
+# 6 Acknowledgements
 
 Acknowledgement should be made of any funding bodies who have supported
 the work reported in the paper, of those who have given permission for
@@ -135,12 +138,12 @@ their work to be reproduced or of individuals whose particular
 assistance is due recognition. Acknowledge data providers here where
 appropriate.
 
-# Biography
+# 7 Biography
 
 All contributing authors should include a biography of no more than 50
 words each outlining their career stage and research interests.
 
-# References
+# 8 References
 
 <div id="refs" class="references csl-bib-body hanging-indent">
 

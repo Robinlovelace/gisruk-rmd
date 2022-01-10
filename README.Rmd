@@ -1,7 +1,7 @@
 ---
-output: github_document
+output: bookdown::github_document2
 # output:
-#   pdf_document:
+#   bookdown::pdf_document2:
 #     template: GISRUKPaperTemplate.tex
 bibliography: references.bib
 ---
@@ -24,7 +24,7 @@ knitr::opts_chunk$set(
 The goal of gisruk-rmd is to provide a template for GISRUK paper submissions that enables reproducible manuscripts to be submitted with embedded R, Python or other code, based on the [RMarkdown superset of LaTeX](https://rmarkdown.rstudio.com/).
 At some point it may also work with '.qmd' [Quarto](https://quarto.org/) documents, which allows [conversion](https://quarto.org/docs/tools/jupyter-lab.html#converting-notebooks) to and from IPython notebooks.
 
-It will create nicely formatted pdf documents, like this: https://github.com/Robinlovelace/gisruk-rmd/releases/download/0.22/example-paper.pdf
+It will create nicely formatted pdf documents, like this: https://github.com/Robinlovelace/gisruk-rmd/releases/download/0.22/example-paper.pdf and this [README as a PDF in GISRUK's style](https://github.com/Robinlovelace/gisruk-rmd/releases/download/0.22/README.pdf).
 
 Reproduce that file and create your own reproducible geographic data analysis paper as follows:
 
@@ -60,6 +60,7 @@ unzip GISRUK*
 See commits to see how it was modified to work as a .Rmd template.
 
 To show it can output in any format the below is a modified example from the original.
+See Python code below, which results in Figure \@ref(fig:plot1).
 
 ```{r, eval=FALSE}
 reticulate::py_install("matplotlib")
@@ -68,7 +69,7 @@ reticulate::py_install("descartes")
 ```
 
 
-```{python, fig.cap="Made with Python", echo=TRUE}
+```{python plot1, fig.cap="Made with Python", echo=TRUE}
 import matplotlib.pyplot as plt
 import geopandas
 from cartopy import crs as ccrs
