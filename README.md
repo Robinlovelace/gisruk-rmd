@@ -45,8 +45,8 @@ When you’d like to see if it works, run the following command:
 rmarkdown::render("example-paper.Rmd")
 ```
 
-You can also press Ctrl+Shift+K in RStudio, which should result in see
-something looking like this:
+You can also press Ctrl+Shift+K in RStudio, which should result in
+something like this:
 
 <img src="output.png" width="100%" />
 
