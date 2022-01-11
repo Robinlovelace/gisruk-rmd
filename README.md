@@ -26,7 +26,7 @@ analysis paper as follows:
     this repo as a .zip
     file](https://github.com/Robinlovelace/gisruk-rmd/archive/refs/heads/main.zip),
     unzipping it, opening the RStudio project and entering the
-    following:
+    following into the console:
 
 ``` r
 file.edit("example-paper.Rmd")
@@ -39,7 +39,7 @@ file.edit("example-paper.Rmd")
 file.edit("GISRUKPaperTemplate.tex")
 ```
 
-When you’d like to see if it works, run the following command:
+When you’d like to see if it works, run the following command (you might have to install `tinytex` package first):
 
 ``` r
 rmarkdown::render("example-paper.Rmd")
